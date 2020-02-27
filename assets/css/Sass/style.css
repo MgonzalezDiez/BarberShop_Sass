@@ -20,6 +20,38 @@ main {
   margin-bottom: 30px;
 }
 
+.borde {
+  margin: 20px auto;
+  color: black;
+  padding-top: 50px;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  padding-bottom: 30px;
+}
+
+.pink {
+  color: #D76C69;
+  line-height: 1.5rem;
+}
+
+.classDiv {
+  padding-top: 80px;
+  vertical-align: middle;
+}
+
+footer {
+  padding-top: 100px;
+  font: italic 700 30px "Playfair Display";
+  vertical-align: middle;
+}
+footer img {
+  border-radius: 100%;
+  float: left;
+  width: 250px;
+  vertical-align: middle;
+}
+
 nav {
   background: black;
 }
@@ -30,12 +62,12 @@ nav a img {
   background: transparent;
 }
 
-.btn-custom {
-  background-color: #D1D1D1;
+.bg-grey {
+  background-color: #6C6E70;
   color: #fff;
-  font-size: 14px;
-  border-radius: 25px;
-  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,10 @@
 @import '../abstracts/variables';
 
-.btn-custom{
-    background-color: $lightGray;
+.bg-grey {
+    background-color: $nickel;
     color: $white;
-    font-size: 14px;
-    border-radius: 25px;
-    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 20px;
+
 }
