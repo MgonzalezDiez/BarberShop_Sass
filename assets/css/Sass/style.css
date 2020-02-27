@@ -1,0 +1,41 @@
+header img {
+  width: 60px;
+}
+
+.jumbotron {
+  background-image: url("/assets/images/post-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  height: 100%;
+}
+
+h1 {
+  font: italic 900 70px "Playfair Display" !important;
+  color: #fff;
+}
+
+main {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+nav {
+  background: black;
+}
+nav li a {
+  color: white;
+}
+nav a img {
+  background: transparent;
+}
+
+.btn-custom {
+  background-color: #D1D1D1;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

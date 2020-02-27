@@ -1,0 +1,28 @@
+
+@import '../abstracts/variables';
+
+
+header img{
+    width: 60px;
+}
+
+.jumbotron {
+    background-image: url('/assets/images/post-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    height: 100%;
+}
+h1{
+    font: $PlayFCursiva !important; 
+    color: $white;
+}
+
+main{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
