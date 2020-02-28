@@ -1,10 +1,17 @@
 @import '../abstracts/variables';
 
-.bg-grey {
-    background-color: $nickel;
-    color: $white;
-    font-size: 16px;
-    border-radius: 20px;
-    padding: 10px 20px;
-
+button{
+    .bg-grey{
+        background-color: $nickel;
+        color: $white;
+        border-radius: 10.25rem;
+    }
+    .bg-grey .small{
+        size: small;
+    }
+    .bg-grey .medium{
+        size: medium;
+    }
+    // font-size: 16px;
+    // float: left;
 }

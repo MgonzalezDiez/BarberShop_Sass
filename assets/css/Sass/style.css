@@ -11,7 +11,7 @@ header img {
 }
 
 h1 {
-  font: italic 900 70px "Playfair Display" !important;
+  font: italic 900 70px "Playfair Display";
   color: #fff;
 }
 
@@ -32,26 +32,52 @@ main {
 
 .pink {
   color: #D76C69;
-  line-height: 1.5rem;
+  line-height: 0.5rem;
+}
+.pink .blog {
+  font-size: 14px;
+  font-style: regular 400 16px "Playfair Display";
+}
+.pink .navbar {
+  font-size: 12px;
+  font-style: regular 400 16px "Playfair Display";
 }
 
 .classDiv {
-  padding-top: 80px;
+  padding-top: 60px;
   vertical-align: middle;
+  font: italic 700 30px "Playfair Display";
 }
 
-footer {
-  padding-top: 100px;
-  font: italic 700 30px "Playfair Display";
-  vertical-align: middle;
+.classDiv .pink {
+  margin-bottom: 0px !important;
 }
-footer img {
+
+.naomi img {
   border-radius: 100%;
   float: left;
   width: 250px;
   vertical-align: middle;
 }
+.naomi p {
+  font: italic 700 30px "Playfair Display";
+  vertical-align: middle;
+}
 
+@media screen and (max-width: 576px) {
+  header img {
+    width: 40px;
+  }
+
+  h1 {
+    font: italic 700 30px "Playfair Display";
+    color: #fff;
+  }
+
+  .jumbotron h1 {
+    font-size: 40px !important;
+  }
+}
 nav {
   background: black;
 }
@@ -62,12 +88,10 @@ nav a img {
   background: transparent;
 }
 
-.bg-grey {
+button .bg-grey {
   background-color: #6C6E70;
   color: #fff;
-  font-size: 16px;
-  border-radius: 20px;
-  padding: 10px 20px;
+  border-radius: 10.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

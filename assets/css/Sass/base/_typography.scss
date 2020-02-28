@@ -14,7 +14,7 @@ header img {
 }
 
 h1 {
-    font: $PlayFCursivaG !important;
+    font: $PlayFCursivaG;
     color: $white;
 }
 
@@ -31,35 +31,61 @@ main {
     border-color: lightgray;
     border-width: 1px;
     padding-bottom: 30px;
-
 }
 
-@mixin img {
-    img {
-        border-radius: 100%;
-        float: left;
-        width: 250px;
-        vertical-align: middle;
-    }
+@mixin img{
+    border-radius: 100%;
+    float: left;
+    width: 250px;
+    vertical-align: middle;
 }
 
-@mixin p {
-    padding-top: 100px;
+@mixin p{
     font: $PlayFCursivaP;
     vertical-align: middle;
 }
 
-.pink {
+.pink{
+    .blog{
+        font-size: 14px;
+        font-style: $PlayFRegularNav;
+    }
+    .navbar{
+        font-size: 12px;
+        font-style: $PlayFRegularNav;   
+    }
     color: $ruddyPink;
-    line-height: 1.5rem;
+    line-height: 0.5rem;
 }
 
-.classDiv {
-    padding-top: 80px;
+.classDiv{
+    padding-top: 60px;
     vertical-align: middle;
+    font: $PlayFCursivaP;
+}
+.classDiv{
+    .pink{
+        margin-bottom: 0px !important;
+    }
+} 
+.naomi{
+    img{
+        @include img;
+    }
+    p{
+        @include p;
+    }
 }
 
-footer {
-    @include img;
-    @include p;
+@media screen and (max-width: 576px){
+    header img {
+    width: 40px;
+}
+    h1 {
+        font: $PlayFCursivaP;
+        color: $white;
+    }
+    .jumbotron h1 {
+         font-size: 40px !important;
+    }
 }
