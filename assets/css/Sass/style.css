@@ -8,11 +8,16 @@ header img {
   background-size: cover;
   padding-top: 100px;
   height: 100%;
+  width: 100%;
 }
 
 h1 {
   font: italic 900 70px "Playfair Display";
   color: #fff;
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
 main {
@@ -55,7 +60,6 @@ main {
 
 .naomi img {
   border-radius: 100%;
-  float: left;
   width: 250px;
   vertical-align: middle;
 }
@@ -72,10 +76,25 @@ main {
   h1 {
     font: italic 700 30px "Playfair Display";
     color: #fff;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
   }
 
-  .jumbotron h1 {
-    font-size: 40px !important;
+  .classDiv {
+    padding-top: 10px;
+    vertical-align: middle;
+    font: italic 700 30px "Playfair Display";
+    text-align: center;
+  }
+
+  .naomi img {
+    border-radius: 100%;
+    width: 250px;
+    vertical-align: middle;
+  }
+  .naomi p {
+    font: italic 700 30px "Playfair Display";
   }
 }
 nav {
@@ -88,10 +107,20 @@ nav a img {
   background: transparent;
 }
 
-button .bg-grey {
+.btn-grey {
   background-color: #6C6E70;
   color: #fff;
   border-radius: 10.25rem;
+  font-size: 14px;
+  left: 10px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .btn-grey {
+    font-size: 10px;
+    margin-right: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

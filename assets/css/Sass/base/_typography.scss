@@ -1,6 +1,5 @@
 @import '../abstracts/variables';
 
-
 header img {
     width: 60px;
 }
@@ -11,11 +10,16 @@ header img {
     background-size: cover;
     padding-top: 100px;
     height: 100%;
+    width: 100%
 }
 
 h1 {
     font: $PlayFCursivaG;
     color: $white;
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
 }
 
 main {
@@ -35,7 +39,7 @@ main {
 
 @mixin img{
     border-radius: 100%;
-    float: left;
+    //float: left;
     width: 250px;
     vertical-align: middle;
 }
@@ -79,13 +83,39 @@ main {
 
 @media screen and (max-width: 576px){
     header img {
-    width: 40px;
-}
+        width: 40px;
+    }
     h1 {
         font: $PlayFCursivaP;
         color: $white;
+        margin: 0 auto;
+        width: 200px;
+        text-align: center;
     }
-    .jumbotron h1 {
-         font-size: 40px !important;
+    .classDiv{
+        padding-top: 10px;
+        vertical-align: middle;
+        font: $PlayFCursivaP;
+        text-align: center;
+    }
+    @mixin p{
+        font: $PlayFCursivaP;
+    }
+    @mixin img{
+        border-radius: 100%;
+        //float: left;
+        width: 250px;
+        vertical-align: middle;
+    }
+    .naomi{
+        img{
+            @include img;
+        }
+        p{
+            @include p;
+        }
+    }
+    #naomi-text{
+        display: none;
     }
 }
