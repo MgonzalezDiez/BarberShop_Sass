@@ -26,7 +26,6 @@ main {
 }
 
 .borde {
-  margin: 20px auto;
   color: black;
   padding-top: 50px;
   border-style: solid;
@@ -68,6 +67,22 @@ main {
   vertical-align: middle;
 }
 
+.pagination .page-item:first-child .page-link {
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
+  padding-left: 50px !important;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-right: 50px;
+}
+
+.bg-color {
+  background-color: lig;
+}
+
 @media screen and (max-width: 576px) {
   header img {
     width: 40px;
@@ -96,9 +111,10 @@ main {
   .naomi p {
     font: italic 700 30px "Playfair Display";
   }
-}
-nav {
-  background: black;
+
+  #naomi-text {
+    display: none;
+  }
 }
 nav li a {
   color: white;
