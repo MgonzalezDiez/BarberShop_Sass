@@ -10,7 +10,44 @@ header img {
     background-size: cover;
     padding-top: 100px;
     height: 100%;
-    width: 100%
+
+}
+
+.btn-sm {
+    margin-left: 20px;
+    color: $white;
+    background-color: $nickel;
+    border-radius: 25px;
+    padding: 8px 15px;
+    font-size: 12px;
+}
+
+
+.btn-md {
+    margin-left: 10px;
+    color: $white;
+    background-color: $nickel;
+    border-radius: 25px;
+    padding: 8px 15px;
+    font-size: 12px;
+}
+
+.btn-sm:hover {
+    color: $white;
+    background-color: $lightGray;
+}
+
+.btn-sm:focus {
+    border-color: $lightGray;
+}
+
+.btn-md:hover {
+    color: $white;
+    background-color: $lightGray;
+}
+
+.btn-sm:focus {
+    border-color: $lightGray;
 }
 
 h1 {
@@ -24,11 +61,13 @@ h1 {
 
 main {
     margin-top: 30px;
-    margin-bottom: 30px;
 }
+
+
 
 .borde {
     color: black;
+    margin-top: 20px;
     padding-top: 50px;
     border-style: solid;
     border-color: lightgray;
@@ -36,69 +75,141 @@ main {
     padding-bottom: 30px;
 }
 
-@mixin img{
+@mixin img {
     border-radius: 100%;
     //float: left;
     width: 250px;
     vertical-align: middle;
 }
 
-@mixin p{
+@mixin p {
     font: $PlayFCursivaP;
     vertical-align: middle;
 }
 
-.pink{
-    .blog{
+.pink {
+    .blog {
         font-size: 14px;
         font-style: $PlayFRegularNav;
     }
-    .navbar{
+
+    .navbar {
         font-size: 12px;
-        font-style: $PlayFRegularNav;   
+        font-style: $PlayFRegularNav;
     }
+
     color: $ruddyPink;
     line-height: 0.5rem;
 }
 
-.classDiv{
+.classDiv {
     padding-top: 60px;
     vertical-align: middle;
     font: $PlayFCursivaP;
 }
-.classDiv{
-    .pink{
+
+.classDiv {
+    .pink {
         margin-bottom: 0px !important;
     }
-} 
-.naomi{
-    img{
+}
+
+.naomi {
+    img {
         @include img;
     }
-    p{
+
+    p {
         @include p;
     }
 }
 
-.pagination .page-item:first-child .page-link {
-        border-top-left-radius: 25px !important;
-        border-bottom-left-radius: 25px !important;
-        padding-left: 50px !important;
-        }
-    
-.page-item:last-child .page-link {
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    padding-right: 50px;
+.pagination {
+    .page-link {
+        color: $eerieBlack;
+    }
+
+    .page-item:first-child .page-link {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        padding-left: 50px;
+    }
+
+    .page-item:last-child .page-link {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        padding-right: 50px;
+    }
+
+    .page-link:hover {
+        z-index: 2;
+        color: $white;
+        text-decoration: none;
+        background-color: $eerieBlack;
+        border-color: $nickel;
+    }
 }
 
-.bg-color{
+
+
+.bg-color {
     background-color: lightgray;
 }
-@media screen and (max-width: 576px){
+
+.transformed {
+    margin-top: 200px;
+    align-content: space-between;
+    //transform: rotate(90deg);
+    background-color: transparent;
+    //color: $white;
+    width: 50px;
+}
+
+footer img {
+    width: 100px;
+}
+
+@media screen and (max-width: 550px) {
     header img {
         width: 40px;
     }
+
+    .pagination {
+        .page-link {
+            color: $eerieBlack;
+        }
+
+        .page-item:first-child .page-link {
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            padding-left: 50px;
+        }
+
+        .page-item:last-child .page-link {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            padding-right: 50px;
+        }
+
+        .page-link:hover {
+            z-index: 2;
+            color: $white;
+            text-decoration: none;
+            background-color: $eerieBlack;
+            border-color: $nickel;
+        }
+    }
+
+    .btn-sm:hover {
+        color: $white;
+        background-color: $lightGray;
+    }
+
+    .btn-md:hover {
+        color: $white;
+        background-color: $lightGray;
+    }
+
     h1 {
         font: $PlayFCursivaP;
         color: $white;
@@ -106,32 +217,41 @@ main {
         width: 200px;
         text-align: center;
     }
-    .classDiv{
+
+    .classDiv {
         padding-top: 10px;
         vertical-align: middle;
         font: $PlayFCursivaP;
         text-align: center;
     }
-    @mixin p{
+
+    @mixin p {
         font: $PlayFCursivaP;
     }
-    @mixin img{
+
+    @mixin img {
         border-radius: 100%;
         //float: left;
         width: 250px;
         vertical-align: middle;
     }
-    .naomi{
-        img{
+
+    .naomi {
+        img {
             @include img;
         }
-        p{
+
+        p {
             @include p;
         }
     }
-    #naomi-text{
+
+    #naomi-text {
         display: none;
     }
-    
-}
 
+    main section div #texto {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}

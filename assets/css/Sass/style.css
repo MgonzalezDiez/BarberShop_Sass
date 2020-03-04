@@ -8,7 +8,42 @@ header img {
   background-size: cover;
   padding-top: 100px;
   height: 100%;
-  width: 100%;
+}
+
+.btn-sm {
+  margin-left: 20px;
+  color: #fff;
+  background-color: #6C6E70;
+  border-radius: 25px;
+  padding: 8px 15px;
+  font-size: 12px;
+}
+
+.btn-md {
+  margin-left: 10px;
+  color: #fff;
+  background-color: #6C6E70;
+  border-radius: 25px;
+  padding: 8px 15px;
+  font-size: 12px;
+}
+
+.btn-sm:hover {
+  color: #fff;
+  background-color: #D1D1D1;
+}
+
+.btn-sm:focus {
+  border-color: #D1D1D1;
+}
+
+.btn-md:hover {
+  color: #fff;
+  background-color: #D1D1D1;
+}
+
+.btn-sm:focus {
+  border-color: #D1D1D1;
 }
 
 h1 {
@@ -22,11 +57,11 @@ h1 {
 
 main {
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .borde {
   color: black;
+  margin-top: 20px;
   padding-top: 50px;
   border-style: solid;
   border-color: lightgray;
@@ -67,25 +102,76 @@ main {
   vertical-align: middle;
 }
 
-.pagination .page-item:first-child .page-link {
-  border-top-left-radius: 25px !important;
-  border-bottom-left-radius: 25px !important;
-  padding-left: 50px !important;
+.pagination .page-link {
+  color: #121619;
 }
-
-.page-item:last-child .page-link {
+.pagination .page-item:first-child .page-link {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-left: 50px;
+}
+.pagination .page-item:last-child .page-link {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding-right: 50px;
 }
-
-.bg-color {
-  background-color: lig;
+.pagination .page-link:hover {
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+  background-color: #121619;
+  border-color: #6C6E70;
 }
 
-@media screen and (max-width: 576px) {
+.bg-color {
+  background-color: lightgray;
+}
+
+.transformed {
+  margin-top: 200px;
+  align-content: space-between;
+  background-color: transparent;
+  width: 50px;
+}
+
+footer img {
+  width: 100px;
+}
+
+@media screen and (max-width: 550px) {
   header img {
     width: 40px;
+  }
+
+  .pagination .page-link {
+    color: #121619;
+  }
+  .pagination .page-item:first-child .page-link {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-left: 50px;
+  }
+  .pagination .page-item:last-child .page-link {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-right: 50px;
+  }
+  .pagination .page-link:hover {
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+    background-color: #121619;
+    border-color: #6C6E70;
+  }
+
+  .btn-sm:hover {
+    color: #fff;
+    background-color: #D1D1D1;
+  }
+
+  .btn-md:hover {
+    color: #fff;
+    background-color: #D1D1D1;
   }
 
   h1 {
@@ -114,6 +200,11 @@ main {
 
   #naomi-text {
     display: none;
+  }
+
+  main section div #texto {
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 nav li a {
